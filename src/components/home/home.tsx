@@ -8,9 +8,9 @@ export default component$(() => {
     return (
         <div id='home' class='w-full font-body'>
                 <div class="w-full h-full bg-primary pt-32 pb-16 lg:py-0">
-                    <div class="container h-screen flex items-center mx-auto">
-                        <div class="w-full flex flex-col lg:flex-row px-12 lg:px-12">
-                            <div class="w-full lg:w-1/2 pr-12 order-2 lg:order-1">
+                    <div class="container h-full lg:h-screen flex items-center mx-auto">
+                        <div class="w-full flex flex-col lg:flex-row px-8 lg:px-12">
+                            <div class="w-full lg:w-1/2 lg:pr-12 order-2 lg:order-1">
                                 <div class="w-full h-full pt-14 lg:pt-12">
                                     <div class="text-lg font-bold text-secondary mb-3">Coulibaly N'Djo-Soro Fagnigué</div>
                                     <h3 class="text-2xl lg:text-4xl font-[1000] uppercase mb-7">Fullstack Developer From Ivory Coast <IvoryCoastFlagIcon class="h-7 w-7 inline-block"/></h3>
@@ -23,18 +23,18 @@ export default component$(() => {
                                             }
                                         </ul>
                                     </div>
-                                    <div class="flex flex-row w-auto">
-                                            <div class="w-auto pr-9">
+                                    <div class="flex flex-row w-full lg:w-auto justify-around lg:justify-start">
+                                            <div class="w-auto lg:pr-9">
                                                 <div class="flex flex-row">
-                                                    <h3 class="font-bold text-6xl text-black">2+</h3>
-                                                    <span class="ml-3 text-xl text-black font-semibold">
+                                                    <h3 class="font-bold text-5xl lg:text-6xl text-black">2+</h3>
+                                                    <span class="ml-3 text:lg lg:text-xl text-black font-semibold">
                                                         Years of
                                                         <br />
                                                         Experience
                                                     </span>
                                                 </div>
                                             </div>
-                                            <div class="w-auto pl-9">
+                                            <div class="w-auto lg:pl-9">
                                                 <a href="https://github.com/fagnigue"><GithubIcon class="h-14 w-14" /></a>
                                             </div>
                                     </div>

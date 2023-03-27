@@ -1,5 +1,4 @@
 import { component$, useSignal, useStylesScoped$, } from '@builder.io/qwik';
-import { Link } from '@builder.io/qwik-city';
 import { CloseIcon } from '../icons/close';
 import { MenuIcon } from '../icons/menu';
 import { MenuCenterLeftIcon } from '../icons/menu-center-left';
@@ -45,7 +44,7 @@ export default component$(() => {
                 menuOptions.map((option, index) => {
                   return (
                     <div class="block w-full pb-2 pl-7">
-                      <Link key={index} class="mr-6 text-lg ">{option}</Link>
+                      <a href={`#${option.toLowerCase()}`} key={index} class="mr-6 text-lg ">{option}</a>
                     </div>
                   )
                 })
