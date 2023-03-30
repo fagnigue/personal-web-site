@@ -19,7 +19,7 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
         subject: 'PERSONAL SITE CONTACT',
         html: data.message,
     })
-    .catch(() => false)
+    .catch((error) => console.log(error))
     .then(() => true);
 
     return {
