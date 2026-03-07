@@ -19,17 +19,19 @@ export const RouterHead = component$(() => {
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-      {head.meta.map((m) => (
-        <meta {...m} />
+      {head.meta.map((m, index) => (
+        <meta key={index} {...m} />
       ))}
 
-      {head.links.map((l) => (
-        <link {...l} />
+      {head.links.map((l, index) => (
+        <link key={index} {...l} />
       ))}
 
-      {head.styles.map((s) => (
-        <style {...s.props} dangerouslySetInnerHTML={s.style} />
-      ))}
+      {head.styles.map((s, index) => {
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        const { dangerouslySetInnerHTML: _, ...props } = s.props as Record<string, unknown>;
+        return <style key={index} {...props} dangerouslySetInnerHTML={s.style} />;
+      })}
     </>
   );
 });

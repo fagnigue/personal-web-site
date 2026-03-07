@@ -11,6 +11,7 @@ export const ServiceModal = component$<ServiceModalProps>((props) => {
     const locale = useContext(I18nContext);
     const dialogRef = useSignal<HTMLDialogElement>();
 
+    // eslint-disable-next-line qwik/no-use-visible-task
     useVisibleTask$(({ track }) => {
         const open = track(() => props.isOpen.value);
         const dialog = dialogRef.value;

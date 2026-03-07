@@ -83,7 +83,7 @@ export default component$(() => {
               {
                 NAV_KEYS.map((nav, index) => {
                   return (
-                    <div class="block w-full pb-2 pl-7">
+                    <div key={index} class="block w-full pb-2 pl-7">
                       <a href={`#${nav.anchor}`} key={index} class="mr-6 text-lg ">{t(nav.key)}</a>
                     </div>
                   )
