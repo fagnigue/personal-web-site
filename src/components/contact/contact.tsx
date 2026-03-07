@@ -72,7 +72,7 @@ export default component$(() => {
                         </div>
                         <div class="flex flex-col lg:flex-row mt-5 lg-mt-10">
                             <div class="lg:w-1/2 w-full">
-                                <div class="float-left mb-11 w-full pr-1 lg:pr-[6.25rem] ">
+                                <div class="float-left mb-11 w-full pr-1 lg:pr-25 ">
                                     <span class="font-extralight text-sm lg:text-base text-zinc-500">
                                     {t('contact.description')}
                                     </span>
@@ -91,7 +91,7 @@ export default component$(() => {
                                 </div>
                             </div>
                             <div class="lg:w-1/2 w-full">
-                                <div class="float-right w-full pl-1 lg:pl-[6.25rem]">
+                                <div class="float-right w-full pl-1 lg:pl-25">
                                         {
                                             action.value?.success &&
                                             messageSentToastVisible.value &&

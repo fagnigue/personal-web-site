@@ -2,7 +2,6 @@ import { component$, useContext, useSignal } from "@builder.io/qwik";
 import { ArrowRightIcon } from "../icons/arrow-right";
 import { GithubIcon } from "../icons/github";
 import { LinkedInIcon } from "../icons/linkedin";
-import { IvoryCoastFlagIcon } from "../icons/ivory-coast-flag";
 import { ServiceModal } from "../modal/service-modal";
 import { $translate, I18nContext } from "~/i18n";
 
