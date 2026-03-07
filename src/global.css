@@ -1,20 +1,30 @@
-/**
- * WHAT IS THIS FILE?
- *
- * Globally applied styles. No matter which components are in the page or matching route,
- * the styles in here will be applied to the Document, without any sort of CSS scoping.
- *
- */
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900;1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+@import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+@plugin "daisyui";
 
 :root {
-  --dark: #2e3032;
-  --light: #fafafa;
+  --color-primary: #F9F9F9;
+  --color-secondary: #4169E1;
+  --color-accent: #FEFEFE;
+  --color-dark: #2e3032;
+  --color-light: #fafafa;
+  --font-body: 'Mulish', sans-serif;
+  --font-contact: 'Poppins', sans-serif;
+  --background-image-profile: url('/profile.jpeg');
+}
+
+@theme inline {
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-accent: var(--color-accent);
+  --color-dark: var(--color-dark);
+  --color-light: var(--color-light);
+  --font-body: var(--font-body);
+  --font-contact: var(--font-contact);
+  --background-image-profile: var(--background-image-profile);
 }
 
 .material-symbols-outlined {
@@ -42,7 +52,7 @@
 }
 
 body {
-  background-color: var(--light);
+  background-color: var(--color-light);
 }
 
 main {
@@ -50,4 +60,32 @@ main {
   margin: 0 auto;
   background-color: white;
   overflow: hidden;
+}
+
+/* Service modal rich description */
+.service-description p {
+  margin-bottom: 0.75rem;
+}
+
+.service-description h4 {
+  font-weight: 700;
+  color: #18181b;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.service-description ul {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.service-description li {
+  margin-bottom: 0.25rem;
+}
+
+.service-description strong {
+  font-weight: 600;
+  color: #18181b;
 }
