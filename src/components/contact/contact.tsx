@@ -46,11 +46,11 @@ export default component$(() => {
 
     const addresses = [
         {
-            text: "Abidjan, Côte d'Ivoire",
+            text: "Grenoble, France",
             icon: <MapPinIcon class="h-6 w-6 inline-block text-secondary" />
         }, 
         {
-            text: "+225 0555925604",
+            text: "+33 07 52 58 08 88",
             icon: <PhoneArrowDownIcon class="h-6 w-6 inline-block text-secondary" />
         }, 
         {
@@ -64,7 +64,7 @@ export default component$(() => {
     const action = useContactMe()
     return (
         <div id='contact' class='w-full h-auto font-contact'>
-            <div class="pt-24 lg:pt-32 pb-20 lg:pb-32 bg-accent">
+            <div class="pt-24 lg:pt-32 pb-20 lg:pb-32 bg-primary">
                     <div class="container mx-auto flex flex-col flex-wrap px-8">
                         <div class="">
                             <span class="text-secondary text-base lg:text-lg font-medium">{t('contact.label')}</span>
