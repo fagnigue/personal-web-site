@@ -12,7 +12,7 @@ export const fr = {
     'home.name': "Coulibaly N'Djo-Soro Fagnigué",
     'home.title': 'Développeur Fullstack',
     'home.yearsOf': 'Années d\'',
-    'home.experience': 'Expérience',
+    'home.experience': 'expérience',
 
     // Roles
     'role.design': 'CONCEPTION',

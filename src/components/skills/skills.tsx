@@ -35,7 +35,7 @@ export default component$(() => {
 
     return (
         <div id="skills" class="w-full font-body">
-            <div class="py-24 lg:py-32 bg-accent">
+            <div class="py-8 lg:py-28 bg-primary">
                 <div class="container mx-auto px-8 lg:px-12">
                     <div class="mb-12">
                         <span class="text-secondary text-base lg:text-lg font-medium">{t('skills.label')}</span>

@@ -10,8 +10,8 @@ export default component$(() => {
   return (
     <div>
       <Home />
-      <Skills />
       <Experience />
+      <Skills />
       <Education />
       <Contact />
     </div>

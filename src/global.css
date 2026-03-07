@@ -6,9 +6,6 @@
 @plugin "daisyui";
 
 :root {
-  --color-primary: #F9F9F9;
-  --color-secondary: #4169E1;
-  --color-accent: #FEFEFE;
   --color-dark: #2e3032;
   --color-light: #fafafa;
   --font-body: 'Mulish', sans-serif;
@@ -16,10 +13,19 @@
   --background-image-profile: url('/profile.jpeg');
 }
 
+/* Override DaisyUI light theme with our colors */
+[data-theme="light"] {
+  --color-primary: #F9F9F9;
+  --color-primary-content: #2e3032;
+  --color-secondary: #4169E1;
+  --color-secondary-content: #ffffff;
+  --color-accent: #FEFEFE;
+  --color-accent-content: #2e3032;
+  --color-base-100: #ffffff;
+  --color-base-content: #2e3032;
+}
+
 @theme inline {
-  --color-primary: var(--color-primary);
-  --color-secondary: var(--color-secondary);
-  --color-accent: var(--color-accent);
   --color-dark: var(--color-dark);
   --color-light: var(--color-light);
   --font-body: var(--font-body);
@@ -60,6 +66,7 @@ main {
   margin: 0 auto;
   background-color: white;
   overflow: hidden;
+  color: var(--color-dark);
 }
 
 /* Service modal rich description */

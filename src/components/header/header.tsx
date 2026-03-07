@@ -26,26 +26,26 @@ export default component$(() => {
     <header
       window:onScroll$={() => (scroll.value = window.scrollY > 85 ? true : false)}>
       <div class="w-full h-auto z-10 fixed">
-        <div class={`${scroll.value ? 'bg-white' : 'bg-white lg:bg-primary'} border-b lg:border-0 w-full h-auto flex justify-between px-7 lg:px-16 py-3 lg:py-6`}>
+        <div class={`${scroll.value ? 'bg-white' : 'bg-white lg:bg-primary'} border-b lg:border-0 w-full h-auto flex justify-between items-center px-7 lg:px-16 py-3 lg:py-6`}>
           <div>
             <a href="/" class="text-3xl lg:text-3xl font-bold">Fagnigué</a>
           </div>
+          <div class="flex items-center gap-1">
+            {LOCALES.map((l) => (
+              <button
+                key={l.code}
+                class={`px-2 py-1 text-sm font-semibold rounded transition-colors ${
+                  locale.value === l.code
+                    ? 'bg-secondary text-white'
+                    : 'text-black hover:text-secondary'
+                }`}
+                onClick$={() => (locale.value = l.code)}
+              >
+                {l.label}
+              </button>
+            ))}
+          </div>
           <div class="flex items-center">
-            <div class="hidden lg:flex items-center mr-4">
-              {LOCALES.map((l) => (
-                <button
-                  key={l.code}
-                  class={`px-2 py-1 text-sm font-semibold rounded transition-colors ${
-                    locale.value === l.code
-                      ? 'bg-secondary text-white'
-                      : 'text-black hover:text-secondary'
-                  }`}
-                  onClick$={() => (locale.value = l.code)}
-                >
-                  {l.label}
-                </button>
-              ))}
-            </div>
             <div class={`${isOpenMenu.value ? 'visible' : 'invisible'} hidden lg:block`}>
               {
                 NAV_KEYS.map((nav, index) => {
@@ -65,21 +65,6 @@ export default component$(() => {
           </div>
         </div>
         <div class={`${isMobileOpenMenu.value ? 'block' : 'hidden'} bg-white pt-2 w-full z-20 lg:hidden`}>
-              <div class="flex gap-2 pl-7 pb-3 border-b border-zinc-100 mb-2">
-                {LOCALES.map((l) => (
-                  <button
-                    key={l.code}
-                    class={`px-3 py-1 text-sm font-semibold rounded transition-colors ${
-                      locale.value === l.code
-                        ? 'bg-secondary text-white'
-                        : 'text-black hover:text-secondary'
-                    }`}
-                    onClick$={() => (locale.value = l.code)}
-                  >
-                    {l.label}
-                  </button>
-                ))}
-              </div>
               {
                 NAV_KEYS.map((nav, index) => {
                   return (

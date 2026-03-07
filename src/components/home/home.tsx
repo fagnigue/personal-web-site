@@ -17,32 +17,32 @@ const services: Service[] = [
     {
         titleKey: 'service.webDevelopment.title',
         descriptionKey: 'service.webDevelopment.description',
-        image: '/images/services/web-development.jpg',
+        image: '/images/services/web-development.svg',
     },
     {
         titleKey: 'service.functionalDesign.title',
         descriptionKey: 'service.functionalDesign.description',
-        image: '/images/services/functional-design.jpg',
+        image: '/images/services/functional-design.svg',
     },
     {
         titleKey: 'service.systemArchitecture.title',
         descriptionKey: 'service.systemArchitecture.description',
-        image: '/images/services/system-architecture.jpg',
+        image: '/images/services/system-architecture.png',
     },
     {
         titleKey: 'service.rnd.title',
         descriptionKey: 'service.rnd.description',
-        image: '/images/services/rnd-innovation.jpg',
+        image: '/images/services/rnd-innovation.svg',
     },
     {
         titleKey: 'service.devops.title',
         descriptionKey: 'service.devops.description',
-        image: '/images/services/app-deployment.jpg',
+        image: '/images/services/app-deployment.svg',
     },
     {
         titleKey: 'service.projectManagement.title',
         descriptionKey: 'service.projectManagement.description',
-        image: '/images/services/project-management.jpg',
+        image: '/images/services/project-management.png',
     },
 ];
 
@@ -52,7 +52,7 @@ export default component$(() => {
     const isModalOpen = useSignal(false);
     const selectedService = useSignal<Service | null>(null);
 
-    const start = new Date(2021, 3);
+    const start = new Date(2023, 0);
     const now = new Date();
     const years = now.getFullYear() - start.getFullYear() - (now.getMonth() < start.getMonth() ? 1 : 0);
     const hasExtra = now.getMonth() !== start.getMonth() || now.getDate() !== start.getDate();
@@ -60,17 +60,17 @@ export default component$(() => {
     return (
         <>
             <div id='home' class='w-full font-body'>
-                <div class="w-full bg-primary pt-32 pb-16 lg:py-0">
+                <div class="w-full bg-primary pt-20 pb-16 lg:py-0">
                     <div class="container lg:h-screen flex items-center mx-auto px-8 lg:px-12">
                         <div class="w-full flex flex-col lg:flex-row lg:justify-between">
                             <div class="w-full lg:w-1/2 order-2 lg:order-1 pt-14 lg:pt-12">
-                                <div class="text-2xl font-bold text-secondary mb-3">{t('home.name')}</div>
+                                <div class="text-xl lg:text-2xl font-bold text-secondary mb-3">{t('home.name')}</div>
                                 <h3 class="text-xl lg:text-2xl font-[1000] uppercase mb-7">
                                     {t('home.title')}
                                     <span class="text-rotate text-secondary ml-2 text-lg lg:text-xl">
                                         <span>
-                                            <span>🎨 {t('role.design')}</span>
-                                            <span>⌨️ {t('role.develop')} 🌱 {t('role.buildGreen')}</span>
+                                            <span>🎨 {t('role.design')} 🌱</span>
+                                            <span>⌨️ {t('role.develop')}</span>
                                             <span>🏗️ {t('role.architect')}</span>
                                             <span>🔬 {t('role.research')}</span>
                                             <span>🚀 {t('role.deploy')}</span>
@@ -110,9 +110,9 @@ export default component$(() => {
                                 </div>
                             </div>
                             <div class="w-full lg:w-1/2 order-1 lg:order-2 flex justify-center lg:justify-end">
-                                <div class="relative w-80 h-96 lg:w-97.5 lg:h-125">
+                                <div class="relative w-40 h-40 sm:w-48 sm:h-48 lg:w-97.5 lg:h-125">
                                     <div class="absolute inset-0 hidden lg:block rounded-xl bg-secondary -rotate-6 -translate-x-10 translate-y-3.75"></div>
-                                    <div class="relative w-full h-full rounded-xl bg-profile bg-no-repeat bg-center bg-cover lg:rotate-[8deg]"></div>
+                                    <div class="relative w-full h-full rounded-full lg:rounded-xl bg-profile bg-no-repeat bg-center bg-cover lg:rotate-[8deg]"></div>
                                 </div>
                             </div>
                         </div>
