@@ -25,8 +25,8 @@ export default component$(() => {
   return (
     <header
       window:onScroll$={() => (scroll.value = window.scrollY > 85 ? true : false)}>
-      <div class="w-full h-auto z-10 fixed">
-        <div class={`${scroll.value ? 'bg-white' : 'bg-white lg:bg-primary'} border-b lg:border-0 w-full h-auto flex justify-between items-center px-7 lg:px-16 py-3 lg:py-6`}>
+      <div class="w-full h-auto z-10 fixed shadow-md">
+        <div class={`${scroll.value ? 'bg-white' : 'bg-white lg:bg-primary'} w-full h-auto flex justify-between items-center px-7 lg:px-16 py-3 lg:py-6`}>
           <div>
             <a href="/" class="text-3xl lg:text-3xl font-bold">Fagnigué</a>
           </div>

@@ -63,7 +63,7 @@ export default component$(() => {
                 <div class="w-full bg-primary pt-20 pb-16 lg:py-0">
                     <div class="container lg:h-screen flex items-center mx-auto px-8 lg:px-12">
                         <div class="w-full flex flex-col lg:flex-row lg:justify-between">
-                            <div class="w-full lg:w-1/2 order-2 lg:order-1 pt-14 lg:pt-12">
+                            <div class="w-full lg:w-1/2 order-2 lg:order-1 pt-8 lg:pt-12">
                                 <div class="text-xl lg:text-2xl font-bold text-secondary mb-3">{t('home.name')}</div>
                                 <h3 class="text-xl lg:text-2xl font-[1000] uppercase mb-7">
                                     {t('home.title')}
