@@ -108,9 +108,12 @@ export default component$(() => {
                                         <a href="https://www.linkedin.com/in/n-djo-soro-coulibaly/" target="_blank" rel="noopener noreferrer"><LinkedInIcon class="h-14 w-14" /></a>
                                     </div>
                                 </div>
+                                <div class="flex justify-center items-center mt-6 lg:mt-12">
+                                    <a role="button" class="btn btn-soft bg-indigo-400 border-0 rounded" href="https://drive.google.com/file/d/1657NHPJn3mZHETblIKkh3GSPJ8rZ0zRY/view?usp=sharing">{t('home.downloadCV')}</a>
+                                </div>
                             </div>
-                            <div class="w-full lg:w-1/2 order-1 lg:order-2 flex justify-center lg:justify-end">
-                                <div class="relative w-40 h-40 sm:w-48 sm:h-48 lg:w-97.5 lg:h-125">
+                            <div class="w-full lg:w-1/2 order-1 lg:order-2 flex justify-center lg:justify-end lg:items-center">
+                                <div class="relative w-40 h-40 sm:w-48 sm:h-48 lg:w-77.5 lg:h-105">
                                     <div class="absolute inset-0 hidden lg:block rounded-xl bg-secondary -rotate-6 -translate-x-10 translate-y-3.75"></div>
                                     <div class="relative w-full h-full rounded-full lg:rounded-xl bg-profile bg-no-repeat bg-center bg-cover lg:rotate-[8deg]"></div>
                                 </div>

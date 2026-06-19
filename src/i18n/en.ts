@@ -13,6 +13,7 @@ export const en = {
     'home.title': 'Fullstack Developer',
     'home.yearsOf': 'Years of ',
     'home.experience': 'experience',
+    'home.downloadCV': 'Download my CV',
 
     // Roles
     'role.design': 'DESIGN',
@@ -169,13 +170,7 @@ export const en = {
 <li>Backlog breakdown, estimation and prioritization on <strong>Jira</strong></li>
 <li>Development team coordination and code reviews</li>
 </ul>
-<h4>What I bring</h4>
-<ul>
-<li>Clear interface between technical and non-technical teams</li>
-<li>Incremental delivery with permanent progress visibility</li>
-<li>Risk anticipation and proactive blocker resolution</li>
-<li>Project documentation maintained throughout the lifecycle</li>
-</ul>`,
+`,
 
     // Skills
     'skills.label': 'Skills',

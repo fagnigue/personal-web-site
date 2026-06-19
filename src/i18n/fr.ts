@@ -13,6 +13,7 @@ export const fr = {
     'home.title': 'Développeur Fullstack',
     'home.yearsOf': 'Années d\'',
     'home.experience': 'expérience',
+    'home.downloadCV': 'Télécharger mon CV',
 
     // Roles
     'role.design': 'CONCEPTION',
@@ -169,13 +170,7 @@ export const fr = {
 <li>Découpage, estimation et priorisation du backlog sur <strong>Jira</strong></li>
 <li>Coordination de l'équipe de développement et revues de code</li>
 </ul>
-<h4>Ce que j'apporte</h4>
-<ul>
-<li>Interface claire entre les équipes techniques et non-techniques</li>
-<li>Livraison incrémentale avec visibilité permanente sur l'avancement</li>
-<li>Anticipation des risques et résolution proactive des blocages</li>
-<li>Documentation de projet maintenue tout au long du cycle de vie</li>
-</ul>`,
+`,
 
     // Skills
     'skills.label': 'Compétences',
