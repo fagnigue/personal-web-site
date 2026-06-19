@@ -1,44 +1,42 @@
-import { component$, useContext, useSignal } from "@builder.io/qwik";
-import { Form,  globalAction$,  z, zod$ } from '@builder.io/qwik-city';
+import { component$, useContext } from "@builder.io/qwik";
 import { EnvelopeIcon } from "../icons/envelope";
 import { MapPinIcon } from "../icons/map-pin";
 import { PhoneArrowDownIcon } from "../icons/phone-arrow-down";
-import { ArrowRightIcon } from '../icons/arrow-right';
 import { $translate, I18nContext } from "~/i18n";
 
-export const useContactMe = globalAction$(async (user, requestEvent) => {
-    const apiKey = requestEvent.env.get('RESEND_API_KEY');
+// export const useContactMe = globalAction$(async (user, requestEvent) => {
+//     const apiKey = requestEvent.env.get('RESEND_API_KEY');
 
-    const res = await fetch('https://api.resend.com/emails', {
-        method: 'POST',
-        headers: {
-            'Authorization': `Bearer ${apiKey}`,
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            from: 'Fagnigue Contact Site <onboarding@resend.dev>',
-            to: ['devfullcoul@gmail.com'],
-            subject: 'PERSONAL SITE CONTACT',
-            html: `
-                <p>
-                    <strong>Nom</strong>: ${user.name}<br>
-                    <strong>Email</strong>: ${user.email}<br>
-                    <strong>Message</strong>: ${user.message}
-                </p>
-            `,
-        }),
-    });
+//     const res = await fetch('https://api.resend.com/emails', {
+//         method: 'POST',
+//         headers: {
+//             'Authorization': `Bearer ${apiKey}`,
+//             'Content-Type': 'application/json',
+//         },
+//         body: JSON.stringify({
+//             from: 'Fagnigue Contact Site <onboarding@resend.dev>',
+//             to: ['devfullcoul@gmail.com'],
+//             subject: 'PERSONAL SITE CONTACT',
+//             html: `
+//                 <p>
+//                     <strong>Nom</strong>: ${user.name}<br>
+//                     <strong>Email</strong>: ${user.email}<br>
+//                     <strong>Message</strong>: ${user.message}
+//                 </p>
+//             `,
+//         }),
+//     });
 
-    return {
-        success: res.ok,
-    };
-},
-zod$({
-    name: z.string().min(3),
-    email: z.string().email(),
-    message: z.string().min(5),
-})
-);
+//     return {
+//         success: res.ok,
+//     };
+// },
+// zod$({
+//     name: z.string().min(3),
+//     email: z.string().email(),
+//     message: z.string().min(5),
+// })
+// );
 
 export default component$(() => {
     const locale = useContext(I18nContext);
@@ -54,14 +52,14 @@ export default component$(() => {
             icon: <PhoneArrowDownIcon class="h-6 w-6 inline-block text-secondary" />
         }, 
         {
-            text: "devfullcoul@gmail.com",
+            text: "n.fagnigue.coulibaly@gmail.com",
             icon: <EnvelopeIcon class="h-6 w-6 inline-block text-secondary" />
         }
     ];
 
-    const messageSentToastVisible = useSignal(true);
+    //const messageSentToastVisible = useSignal(true);
 
-    const action = useContactMe()
+    //const action = useContactMe()
     return (
         <div id='contact' class='w-full h-auto font-contact'>
             <div class="pt-24 lg:pt-32 pb-20 lg:pb-32 bg-primary">
@@ -90,7 +88,7 @@ export default component$(() => {
                                     </ul>
                                 </div>
                             </div>
-                            <div class="lg:w-1/2 w-full">
+                            {/* <div class="lg:w-1/2 w-full">
                                 <div class="float-right w-full pl-1 lg:pl-25">
                                         {
                                             action.value?.success &&
@@ -117,7 +115,7 @@ export default component$(() => {
                                         </button>
                                     </Form>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                         
                     </div>

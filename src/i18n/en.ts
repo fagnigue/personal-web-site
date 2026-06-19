@@ -259,7 +259,7 @@ export const en = {
     // Contact
     'contact.label': 'Contact',
     'contact.title': 'Get In Touch',
-    'contact.description': 'Please fill out the form in this section to contact me. Or call between 9:00 AM and 8:00 PM GMT, Monday to Friday',
+    'contact.description': 'Please call between 8:00 AM and 8:00 PM GMT, Monday to Friday',
     'contact.successMessage': 'Your message has been sent successfully.',
     'contact.placeholder.name': 'Name',
     'contact.placeholder.email': 'Email',

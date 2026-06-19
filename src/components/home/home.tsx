@@ -109,7 +109,7 @@ export default component$(() => {
                                     </div>
                                 </div>
                                 <div class="flex justify-center items-center mt-6 lg:mt-12">
-                                    <a role="button" class="btn btn-soft bg-indigo-400 border-0 rounded" href="https://drive.google.com/file/d/1657NHPJn3mZHETblIKkh3GSPJ8rZ0zRY/view?usp=sharing">{t('home.downloadCV')}</a>
+                                    <a role="button" class="btn btn-soft bg-secondary text-white border-0 rounded" href="https://drive.google.com/file/d/1657NHPJn3mZHETblIKkh3GSPJ8rZ0zRY/view?usp=sharing">{t('home.downloadCV')}</a>
                                 </div>
                             </div>
                             <div class="w-full lg:w-1/2 order-1 lg:order-2 flex justify-center lg:justify-end lg:items-center">

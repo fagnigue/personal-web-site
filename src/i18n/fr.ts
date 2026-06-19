@@ -259,7 +259,7 @@ export const fr = {
     // Contact
     'contact.label': 'Contact',
     'contact.title': 'Contactez-Moi',
-    'contact.description': 'Veuillez remplir le formulaire de cette section pour me contacter. Ou appelez entre 9h00 et 20h00. GMT, du lundi au vendredi',
+    'contact.description': 'Veuillez appelez entre 8h00 et 20h00. GMT, du lundi au vendredi',
     'contact.successMessage': 'Votre message a été transmis avec succès.',
     'contact.placeholder.name': 'Nom',
     'contact.placeholder.email': 'Email',
